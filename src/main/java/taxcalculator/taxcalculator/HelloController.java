@@ -17,7 +17,6 @@ public class HelloController {
     public ComboBox countryChooser;
     @FXML
     public ComboBox frequencyChooser;
-
     //income input
     @FXML
     private TextField grossIncome;
@@ -50,13 +49,10 @@ public class HelloController {
     //this is the highest rate tax band
     @FXML
     int taxThree = 150001;
-
     //this is the 2nd highest tax band
     @FXML
     int taxTwo = 50270;
-
     //this is the 3rd tax band
-
     @FXML
     int taxOne= 12570;
 
@@ -107,8 +103,6 @@ public class HelloController {
     @FXML
     double annualIncome;
 
-
-
     //Methods below:
     @FXML
     protected void wageButtonClick() {
@@ -147,9 +141,6 @@ to save redefining grossIncomeInt & annualIncome
         } else {
             annualIncome = grossIncomeDouble*1;
         }
-
-
-
         GrossIncomeDisplay1.setText("You earn £" + " " + grossIncomeNumber + " " + frequency);
         GrossIncomeDisplay2.setText("For a total of £" + annualIncome + " Per Year");
         return annualIncome;
