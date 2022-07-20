@@ -1,9 +1,11 @@
 package taxcalculator.taxcalculator;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 
 
 public class HelloController {
@@ -126,6 +128,8 @@ to save redefining grossIncomeInt & annualIncome
       if (grossIncome.getText().isEmpty()){
           GrossIncomeDisplay1.setText("You must enter a number and choose a frequency above");
       }
+
+  // - see end of this file checkDouble(grossIncome);
 
         double grossIncomeDouble = Double.parseDouble(grossIncome.getText());
 
@@ -261,4 +265,23 @@ to save redefining grossIncomeInt & annualIncome
         netWageDisplay.setText("Annual Income: " + net);
     }
 
+
+    /*  the below to validate the grossIncome text-field input
+    @FXML
+    private void checkDouble(TextField grossIncome){
+        try{
+            Double.parseDouble(grossIncome.getText());
+            //return true;
+        }
+        catch (NumberFormatException e ){
+            GrossIncomeDisplay1.setText("You must enter a number and choose a frequency above");
+           // return false;
+        }
+
+    }
+
+     */
+
+
 }
+
