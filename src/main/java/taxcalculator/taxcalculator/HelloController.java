@@ -12,7 +12,6 @@ public class HelloController {
     @FXML
     public ComboBox studentLoanChooser;
     @FXML
-
     //country input - determines tax and national insurance rates
     public ComboBox countryChooser;
     @FXML
@@ -20,8 +19,6 @@ public class HelloController {
     //income input
     @FXML
     private TextField grossIncome;
-
-
 
     //the labels  below display information when wage button is clicked
     @FXML
